@@ -1,3 +1,48 @@
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
+
+.date-tag {
+  border-color: #0861f1;
+  border-width: 1px;
+  background-color: #4285f4;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 14px;
+  padding: 6px 11px;
+  position: relative
+}
+
+.date-tag:after {
+  border-color: #156cf7;
+  border-left-width: 1px;
+  border-right-width: 1px;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-top: 8px solid #4285f4;
+  content: "";
+  height: 0;
+  left: 50%;
+  position: absolute;
+  top: 100%;
+  transform: translate(-50%);
+  width: 0
+}
+
+
+.markdown-container h2 {
+  @apply text-xl mt-4;
+}
+
+.markdown-container img {
+  @apply mx-auto;
+}
+
+.markdown-container a {
+  @apply underline;
+}
+
+.markdown-container p {
+  @apply my-2;
+}
+
